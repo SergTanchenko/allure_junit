@@ -1,5 +1,8 @@
 package com.swissquote.tests;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -8,6 +11,7 @@ import com.swissquote.lib.SqStories;
 
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
+import ru.yandex.qatools.allure.annotations.Title;
 
 
 @Features(SqFeatures.SEARCH_ENGINE)
@@ -21,21 +25,15 @@ public class ResultTableTest {
 	}
 
 	@Stories(SqStories.PST_124)
+	@Title("If data is missing for current active tab switch to the first visible tab with data")
 	@Test
-	public void ifNoResultsThenAllTabsAreHidden() throws Exception {
+	public void testTabVisibility() {
 		Assert.assertTrue(true);
 	}
 
 	@Stories(SqStories.PST_150)
 	@Test
-	public void ifNoResultsThenFollowingTextIsDisplayed() throws Exception {
-		Assert.assertTrue(true);
-	}
-
-
-	@Stories(SqStories.PST_150)
-	@Test
-	public void secondTestForPst150() throws Exception {
+	public void ifNoResultsThenFollowingTextIsDisplayed() {
 		Assert.assertTrue(true);
 	}
 }
