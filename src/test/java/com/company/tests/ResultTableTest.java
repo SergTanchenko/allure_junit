@@ -1,11 +1,11 @@
-package com.swissquote.tests;
+package com.company.tests;
 
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.swissquote.lib.SqFeatures;
-import com.swissquote.lib.SqStories;
+import com.company.lib.SqFeatures;
+import com.company.lib.SqStories;
 
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;

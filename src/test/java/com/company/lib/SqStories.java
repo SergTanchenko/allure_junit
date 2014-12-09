@@ -1,4 +1,4 @@
-package com.swissquote.lib;
+package com.company.lib;
 
 /**
  * (c) Swissquote 11/24/14
